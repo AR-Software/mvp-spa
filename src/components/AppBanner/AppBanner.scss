@@ -1,0 +1,151 @@
+/**
+ * ----------------------------------------
+ * slide-in-bottom
+ * ----------------------------------------
+ */
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * slide-down-top
+ * ----------------------------------------
+ */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * slide-down-top
+ * ----------------------------------------
+ */
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * kenburns-top
+ * ----------------------------------------
+ */
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.2) translateY(-10px);
+    transform-origin: top;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * bouncing
+ * ----------------------------------------
+ */
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.App-banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+
+  .Header-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    max-width: 70%;
+  }
+
+  .background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #251757, $alpha: 0.2);
+  }
+
+  .title-large {
+    font-size: 55px;
+    font-weight: 900;
+  }
+
+  .search-container {
+    margin-top: 12%;
+    z-index: 1;
+    width: 50%;
+  }
+
+  .subtitle {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .slide-in {
+    animation: slide-in-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 250ms;
+  }
+
+  .fade-in {
+    animation: fade-in 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 400ms;
+  }
+
+  .kenburns-top {
+    animation: kenburns-top 15s ease-out 0.5s forwards;
+  }
+
+  .bouncing {
+    animation: bouncing 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s infinite;
+  }
+}

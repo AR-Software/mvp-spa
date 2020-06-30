@@ -1,0 +1,45 @@
+.AppSearch {
+    display: flex;
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    form * {
+        border: 2px solid white;
+        font-size: 18px;
+        font-weight: 900;
+        margin: 0;
+        color: white;
+
+        &:focus {
+            outline: none;
+            border: 1px solid white;
+            box-shadow: 0 0 0 1px white, 0 0 0 3px wheat, 0 0 0 4px white;
+        }
+    }
+
+    .search-input {
+        width: 70%;
+        height: 100%;
+        max-height: 100%;
+        background-color: transparent;
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 100%;
+        transition: all 100ms ease-in-out;
+        transition-property: border, box-shadow;
+    }
+
+    .search-btn {
+        width: 150px;
+        height: 100%;
+        background-color: transparent;
+        border-left: none;
+        cursor: pointer;
+    }
+}
