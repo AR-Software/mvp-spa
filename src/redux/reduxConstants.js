@@ -3,8 +3,8 @@ import { defaultBackground } from '../AppGlobals';
 export class ReduxConstants {
     static DEFAULT_STATE =  {
         headerAppearance: {
-            headerTitle: 'Search Lorem ipsum', 
-            headerSubtitle: 'Hint lorem ipsum',
+            headerTitle: 'Find your dream experience', 
+            headerSubtitle: 'Trip paradise will take you there...',
             headerBackground: defaultBackground
         }
     }

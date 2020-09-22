@@ -79,7 +79,7 @@ class AppHeader extends Component {
         <AppBar position="fixed"  style={{...this.state.appBar}}>
           <Toolbar style={{...this.state.appBar}}>
             <Button style={{...this.state.appBar}} component={Link} className={classes.logoButton} to="/">
-             MVP
+             Trip Paradise
             </Button>
           
             <Button style={{...this.state.appBar}} component={Link} className={classes.link}to="/">
